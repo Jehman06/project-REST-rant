@@ -8,3 +8,8 @@ button {
     background-color: cornflowerblue;
     color: white;
 }
+
+img {
+   height: 300px;
+   width: 300px; 
+}

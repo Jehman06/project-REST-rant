@@ -7,7 +7,13 @@ function error404 () {
         <Def>
             <main>
                 <h1>404: PAGE NOT FOUND</h1>
-                <p>Oopsie, we can't find this page. Sorry.</p>
+                <p>Whoopsie, we can't find this page. Sorry.</p>
+                <div>
+                    <img src="/images/smiling dog.png" alt="Smiling dog"/>
+                    <div>
+                        Photo by <a href="https://www.thisdogslife.co/dog-cant-stop-smiling-when-grasshopper-lands-on-her-head/">This Dogs Life</a>
+                    </div>
+                </div>
             </main>
         </Def>
     )
