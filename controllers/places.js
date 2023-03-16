@@ -1,6 +1,18 @@
 
 const router = require('express').Router()
 
+// CREATE ROUTE
+router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST /places')
+})
+
+// CREATE NEW
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
+// GET PLACES
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
