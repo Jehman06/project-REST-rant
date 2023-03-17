@@ -1,10 +1,20 @@
 
 const router = require('express').Router()
+const places = require('../models/places.js')
 
 // CREATE ROUTE
 router.post('/', (req, res) => {
-  console.log(req.body)
-  res.send('POST /places')
+  if(!req.body.pic) {
+    req.body.pic = "https://d.newsweek.com/en/full/1519658/barcito-los-angeles.jpg?w=1600&h=1600&q=88&f=64b0d307cded2a8be3187114f44f175b"
+  }
+  if(!req.body.city) {
+    req.body.city = 'Anytown'
+  }
+  if(!req.body.state) {
+    req.body.state = 'USA'
+  }
+  places.push(req.body)
+  res.redirect('/places')
 })
 
 // CREATE NEW
@@ -13,20 +23,7 @@ router.get('/new', (req, res) => {
 })
 
 // GET PLACES
-router.get('/', (req, res) => {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: '/images/thai-restaurant.jpg'
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: '/images/coding-cat-cafe.jpeg'
-      }]      
+router.get('/', (req, res) => {     
     res.render('places/index', {places})
 })
 

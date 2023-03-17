@@ -10,7 +10,29 @@ function Def(html) {
                 <link rel="stylesheet" href="/css/style.css"/>
             </head>
             <body>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/places">Places</a>
+                        </li>
+                        <li>
+                            <a href="/places/new">Add a Place</a>
+                        </li>
+                    </ul>
+                </nav>
                 {html.children}
+                <div className="push"></div>
+                <footer>
+                    <nav className='footer'>
+                        <ul>
+                            <li><a href="https://github.com/Jehman06">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/jeremy-lehmann/">Linkedin</a></li>
+                        </ul>
+                    </nav>
+                </footer>
             </body>
         </html>
     )
