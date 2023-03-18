@@ -15,7 +15,8 @@ function Show(data) {
                         <h2>Rating</h2>
                         <p>No Ratings yet.</p>
                         <h2>Description</h2>
-                        <p>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}</p>
+                        <p>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}.</p>
+                        <p>Established {data.place.foundedYear}.</p>
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-sm'>
