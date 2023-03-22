@@ -4,7 +4,7 @@ const placeSchema = new mongoose.Schema({
   city: {type: String, default: 'Anytown'},
   state: {type: String, default: 'USA'},
   cuisines: {type: String, required: true},
-  pic: {type: String, default: 'https://d.newsweek.com/en/full/1519658/barcito-los-angeles.jpg?w=1600&h=1600&q=88&f=64b0d307cded2a8be3187114f44f175b'},
+  pic: {type: String, default: 'https://cdn.vox-cdn.com/thumbor/0LszXQmBEuNvTgksqb23sd2vqA8=/0x0:1000x600/1200x900/filters:focal(420x220:580x380):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/68734628/Born___Raised.0.jpg'},
   foundedYear: Number
 })
 
