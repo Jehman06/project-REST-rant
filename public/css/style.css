@@ -1,12 +1,35 @@
 
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: #0067A5;
   } 
   
-button {
+a > button {
     background-color: cornflowerblue;
     color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+a > button:hover {
+  background-color: #0067A5;
+}
+
+.a1, .a2, .copyright {
+  font-size: smaller;
+}
+
+input {
+  background-color: cornflowerblue;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+input:hover {
+background-color: #0067A5;
 }
 
 img {
@@ -24,13 +47,9 @@ img {
   height:50px;
 }
 
-.footer > li {
+.footer > li > a {
   color: white;
-  font-size: 1em;
-}
-
-footer > a:hover {
-  color: pink;
+  font-size: 0.5em;
 }
 
 nav {
@@ -54,7 +73,7 @@ nav a {
 }
 
 nav a:hover {
-  color: pink;
+  color: lightblue;
   text-decoration: none;
 }
 
@@ -67,4 +86,8 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: lightblue;
+}
+
+h2 {
+  color: cornflowerblue;
 }

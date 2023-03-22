@@ -11,7 +11,7 @@ function error404 () {
                 <div>
                     <img src="/images/smiling dog.png" alt="Smiling dog"/>
                     <div>
-                        Photo by <a href="https://www.thisdogslife.co/dog-cant-stop-smiling-when-grasshopper-lands-on-her-head/">This Dogs Life</a>
+                        Photo by <a href="https://www.thisdogslife.co/dog-cant-stop-smiling-when-grasshopper-lands-on-her-head/" target='_blank'>This Dogs Life</a>
                     </div>
                 </div>
             </main>

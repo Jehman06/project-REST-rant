@@ -10,7 +10,7 @@ function Def(html) {
                 <link rel="stylesheet" href="/css/style.css"/>
             </head>
             <body>
-                <nav>
+                <nav className='navbar-nav'>
                     <ul>
                         <li>
                             <a href="/">Home</a>
@@ -28,8 +28,9 @@ function Def(html) {
                 <footer>
                     <nav className='footer'>
                         <ul>
-                            <li><a href="https://github.com/Jehman06">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/jeremy-lehmann/">Linkedin</a></li>
+                            <li className='copyright'>Made by Jeremy Lehmann</li>
+                            <li><a className='a1' href="https://github.com/Jehman06" target="_blank">GitHub</a></li>
+                            <li><a className='a2' href="https://www.linkedin.com/in/jeremy-lehmann/" target="_blank">Linkedin</a></li>
                         </ul>
                     </nav>
                 </footer>
@@ -39,3 +40,4 @@ function Def(html) {
 }
 
 module.exports = Def
+

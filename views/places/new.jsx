@@ -61,7 +61,7 @@ function new_form() {
                         </div>
                     </div>
                     <br/>
-                    <input className="btn btn-primary" type="submit" value="Add Place"/>
+                    <input className="btn-primary" type="submit" value="Add Place"/>
                 </form>
             </main>
         </Def>
