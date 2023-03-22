@@ -9,14 +9,21 @@ function Show(data) {
                 <div className="row">
                     <div className='col-sm-6'>
                         <img src={data.place.pic} alt={data.place.name}/>
+                        <h3>
+                            Located in {data.place.city}, {data.place.state}.
+                        </h3>
                     </div>
                     <div className='col-sm-6'>
                         <h1>{data.place.name}</h1>
                         <h2>Rating</h2>
                         <p>No Ratings yet.</p>
                         <h2>Description</h2>
-                        <p>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}.</p>
-                        <p>Established {data.place.foundedYear}.</p>
+                        <h4>
+                            {data.place.showEstablished()}
+                        </h4>
+                        <h4>
+                            Serving {data.place.cuisines}
+                        </h4>
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-sm'>
