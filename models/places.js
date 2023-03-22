@@ -7,8 +7,8 @@ const placeSchema = new mongoose.Schema({
   pic: {type: String, default: 'https://cdn.vox-cdn.com/thumbor/0LszXQmBEuNvTgksqb23sd2vqA8=/0x0:1000x600/1200x900/filters:focal(420x220:580x380):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/68734628/Born___Raised.0.jpg'},
   foundedYear: {
     type: Number,
-    min: [1673, 'Most likely not that old!'],
-    max: [new Date().getFullYear(), 'Hey, this year is in the future!']
+    min: [1673, ' Most likely not that old!'],
+    max: [new Date().getFullYear(), ' Hey, this year is in the future!']
   } 
 })
 
