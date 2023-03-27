@@ -2,6 +2,25 @@ const React = require('react')
 const Def = require('../default')
 
 function Show(data) {
+    let comments = (
+        <h3 className='inactive'>
+            No comments yet!
+        </h3>
+    )
+    if (data.place.comments.length) {
+        comments = data.place.comments.map(c => {
+            return (
+                <div className='border'>
+                    <h2 className='rant'>{c.rant ? 'Rant! 😡' : 'Rave! 🥰'}</h2>
+                    <h4>{c.content}</h4>
+                    <h3>
+                        <strong>- {c.author}</strong>
+                    </h3>
+                    <h5>Rating: {c.stars}</h5>
+                </div>
+            )
+        })
+    }
     return (
         <Def>
             <main>
@@ -32,7 +51,7 @@ function Show(data) {
                                     </a>
                                 </div>
                                 <div className='col-sm'>
-                                    <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
+                                    <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                                         <button type="submit" className='btn btn-danger'>
                                             Delete
                                         </button>
@@ -46,7 +65,7 @@ function Show(data) {
                 <hr/>
                 <div className='container-fluid'>
                     <h1>Comments</h1>
-                    <p>No comments yet.</p>
+                    {comments}
                 </div>
             </main>
         </Def>
