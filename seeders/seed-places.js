@@ -14,6 +14,13 @@ db.Place.create([{
     cuisines: 'Coffee, Bakery',
     pic: 'https://www.mercurycafe.com/wp-content/uploads/2022/05/coffeecounter.jpg',
     foundedYear: 2015
+}, {
+    name: 'Bahn Thai',
+    city: 'San Diego',
+    state: 'CA',
+    cuisines: 'Thai',
+    pic: 'https://media.sandiegoreader.com/img/photos/2021/01/18/bahn_thai_hillcrest_place_t670.jpg?b3f6a5d7692ccc373d56e40cf708e3fa67d9af9d',
+    foundedYear: 2012
 }])
 .then(() => {
     console.log('Success!')
