@@ -28,10 +28,6 @@ input {
   border-radius: 25px;
 }
 
-input:hover {
-background-color: #0067A5;
-}
-
 img {
    height: 300px;
    width: 300px; 
