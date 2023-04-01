@@ -104,7 +104,7 @@ function Show(data) {
                   <input id="author" name="author" className="form-control" />
                 </div>
                 <div className="form-group col-sm-4">
-                  <label htmlFor="stars">Star Rating</label>
+                  <label htmlFor="stars">Star Rating (1-5, can give .5)</label>
                   <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-range" />
                 </div>
                 <div className="form-group col-sm-2">
