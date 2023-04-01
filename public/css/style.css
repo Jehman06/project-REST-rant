@@ -20,13 +20,13 @@ a > button:hover {
   font-size: smaller;
 }
 
-input {
+/* input {
   background-color: cornflowerblue;
   color: white;
   height: 50px;
   width: 150px;
   border-radius: 25px;
-}
+} */
 
 img {
    height: 300px;

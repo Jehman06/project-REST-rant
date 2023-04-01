@@ -46,7 +46,7 @@ function Show(data) {
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-sm'>
-                                    <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
+                                    <a href={`/places/${data.place.id}/edit`} className='btn btn-warning'>
                                         Edit
                                     </a>
                                 </div>
@@ -83,7 +83,7 @@ function Show(data) {
                 </div>
                 <div className="form-group col-sm-4">
                   <label htmlFor="stars">Star Rating</label>
-                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-control" />
+                  <input type="range" step="0.5" min="1" max="5" id="stars" name="stars" className="form-range" />
                 </div>
                 <div className="form-group col-sm-2">
                   <label htmlFor="rant">Rant?</label>
